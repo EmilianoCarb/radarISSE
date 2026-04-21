@@ -1,8 +1,10 @@
+#include <Arduino.h>
 #include <ESP32Servo.h>
 
 const int trigPin = 13; 
 const int echoPin = 12; 
 const int servoPin = 14; 
+
 
 Servo myServo;
 void escanIda();
