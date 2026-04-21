@@ -15,8 +15,10 @@ ArrayList<Detection> trail = new ArrayList<Detection>();
 void setup() {
   size(1200, 700); 
   smooth();
-  // Verifica que el puerto sea el correcto
-  myPort = new Serial(this, "/dev/ttyUSB0", 115200); 
+  /*============================================IMPORTANTE========================================
+Verifica que el puerto sea el correcto (el "/dev/ttyUSB0" por el COM3 o puerto que se esté utilizando 
+ ===============================================IMPORTANTE========================================*/ 
+myPort = new Serial(this, "/dev/ttyUSB0", 115200); 
   myPort.bufferUntil('.'); 
 }
 
